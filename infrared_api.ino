@@ -68,9 +68,9 @@ void loop() {
 }
 int arac_say()
 { int r = digitalRead(irSensorPin) ;
-  if (r == HIGH && r0 == LOW){
+  if (r == LOW && r0 == HIGH){
     digitalWrite(ledPin, HIGH);
-    delay(10);
+    delay(300);
     digitalWrite(ledPin, LOW);
     count = count + 1;//cisim sayisini 1 arttiriyor.
     Serial.println("Algilanan Cisim Sayisi: ");//ve yazdiriyoruz.
